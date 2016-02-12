@@ -28,3 +28,87 @@ function isFalse(val){
 }
 console.log(isFalse(1));
 
+function isEqual(firstWord,secondWord){
+	if (firstWord === secondWord){
+		return "AWWWWRIGHT";
+	}
+	else{
+		return "Y U NO MATCH";
+	}
+}
+
+console.log(isEqual("Hi","Hi"));
+
+
+function isNotEqual(firstWord,secondWord){
+	if (firstWord === secondWord){
+		return "AWWWWRIGHT";
+	}
+	else{
+		return "Y U MATCH";
+	}
+}
+
+console.log (isNotEqual("Hi","Bye"));
+
+function doubleEquals(first,second){
+	if (first === second){
+		return true;
+	}
+	else{
+		return false;
+	}
+
+}
+
+console.log (doubleEquals("Hi","Bye"));
+
+function totalOver30(first, second,third){
+	if (first + second + third > 30){
+		return true;
+	}
+	else{
+		return false;
+	}
+
+}
+console.log (totalOver30(20,4,80));
+
+function totalUnderWhat(first,second,third,fourth){
+	if (first + second + third < fourth){
+		return true;	
+	}
+	else{
+		return false;
+	}
+}
+
+console.log (totalUnderWhat(10,20,30,1));
+
+function looptoNumber(limit){
+	for(var i=0; i < limit; i++){
+		console.log(i);
+	}
+}
+
+looptoNumber(3);
+
+function showEachValue(characters){
+	for(var i=0; i<characters.length; i++){
+		console.log(characters[i]);
+	}
+}
+showEachValue("hello");
+
+var phrase;
+phrase = "I ate A lot todAy";
+
+function createArrayFromString(word){
+	var letters = [];
+	for(var i=0; i<word.length; i++){
+		console.log(word[i]);
+	}
+}
+
+
+
