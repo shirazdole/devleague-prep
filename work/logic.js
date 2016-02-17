@@ -104,11 +104,17 @@ var phrase;
 phrase = "I ate A lot todAy";
 
 function createArrayFromString(word){
-	var letters = [];
-	for(var i=0; i<word.length; i++){
-		console.log(word[i]);
+	var letters = []; //"this array will store letters, not A"//	for(var i=0; i<word.length; i++){
+		for(var i=0; i<word.length; i++){	
+			var currentletter = word.charAt(i);
+		if (currentletter !== "A" && currentletter !== "a"){
+			letters.push(currentletter); 
+		}
+
 	}
+			return letters;
 }
 
+console.log(createArrayFromString(phrase));	
 
 
